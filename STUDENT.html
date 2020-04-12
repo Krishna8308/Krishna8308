@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student Login</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body:before {
+            content: '';
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            background-image: url("tt.jpg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            filter: blur(10px);
+        }
+        
+        .contact-form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            height: 510px;
+            padding: 80px 40px;
+            box-sizing: border-box;
+            background: rgba(0, 0, 0, .5);
+        }
+        
+        .avatar {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+            top: calc(-80px/2);
+            left: calc(50% - 40px);
+        }
+        
+        .contact-form h2 {
+            margin: 0;
+            padding: 0 0 20px;
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        
+        .contact-form p {
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+            color: #fff;
+        }
+        
+        .contact-form input {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        
+        .contact-form input[type="text"],
+        .contact-form input[type="password"] {
+            border: none;
+            border-bottom: 1px solid #fff;
+            background: transparent;
+            outline: none;
+            height: 40px;
+            color: #fff;
+            font-size: 16px;
+        }
+        
+        .contact-form input[type="submit"] {
+            height: 30px;
+            color: #fff;
+            font-size: 15px;
+            background: red;
+            cursor: pointer;
+            border-radius: 25px;
+            border: none;
+            outline: none;
+            margin-top: 0%;
+        }
+        
+        .contact-form-1[type="submit"] {
+            height: 30px;
+            color: #fff;
+            font-size: 15px;
+            background: red;
+            cursor: pointer;
+            border-radius: 25px;
+            border: none;
+            outline: none;
+            margin-top: 0%;
+        }
+        
+        .contact-form a {
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        .t {
+            color: cornsilk;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contact-form">
+        <img src="k.jpg" class="avatar">
+        <h2>Student Login </h2>
+        <form>
+            <label for="email" class="t"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required><br>
+            <label for="psw" class="t"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required><br>
+            <label for="psw-repeat" class="t"><b>Confirm Password</b></label>
+            <input type="password" placeholder="Confirm Password" name="psw-repeat" required><br>
+            <input type="submit" name="" value="Register" onclick="window.location.href = 'E:\html project\real2.html';">
+            <input type="submit" name="" value="Login" onclick="window.location.href = 'E:\html project\real2.html';">
+            <!-- <p>Already have account?s</p>
+                <button class ="contact-form-1" type="submit" onclick="window.location.href = 'E:\html project\real1.html';"> Log in</button> -->
+        </form>
+    </div>
+</body>
+
+</html>
